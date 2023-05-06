@@ -137,6 +137,7 @@
     </div>
     <hr>
 </section>
+<!--
 <script>
     function searchAjax(active){
                  $.ajax({
@@ -150,7 +151,7 @@
                     }
                 });
             }
-</script>
+</script> -->
 <script>
 </script>
 @endsection

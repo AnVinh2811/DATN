@@ -10,17 +10,17 @@ return false;
 }
 @endphp
 {{-- _MultiBanner --}}
-<div class="container">
+<!-- <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <!-- Indicators -->
+        <!-- Indicators 
         <ul class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ul>
 
-        <!-- The slideshow -->
+        <!-- The slideshow 
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/banner-1.jpg" alt="Compo 1" width="1100" height="500">
@@ -33,7 +33,7 @@ return false;
             </div>
         </div>
 
-        <!-- Left and right controls -->
+        <!-- Left and right controls 
         <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
@@ -41,53 +41,101 @@ return false;
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-</div>
+</div> -->
+<section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
+    <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
+                <div class="col-md-6 col-sm-12 ftco-animate">
+                    <span class="subheading">Delicious</span>
+                    <h1 class="mb-4">Italian Cuizine</h1>
+                    <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                </div>
+                <div class="col-md-6 ftco-animate">
+                    <img src="images/bg_1.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+                <div class="col-md-6 col-sm-12 order-md-last ftco-animate">
+                    <span class="subheading">Crunchy</span>
+                    <h1 class="mb-4">Italian Pizza</h1>
+                    <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                </div>
+                <div class="col-md-6 ftco-animate">
+                    <img src="images/bg_2.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                    <span class="subheading">Welcome</span>
+                    <h1 class="mb-4">We cooked your desired Pizza Recipe</h1>
+                    <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 {{-- Index --}}
-<section class="ftco-section">
+<section class="ftco-section ftco-services">
+    <div class="overlay"></div>
     <div class="container">
-        <div class="row no-gutters ftco-services">
-            <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services mb-md-0 mb-4">
-                    <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
-                        <span class="flaticon-shipped"></span>
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h2 class="mb-4">DỊCH VỤ</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span class="flaticon-diet"></span>
                     </div>
                     <div class="media-body">
-                        <h3 class="heading">Miễn phí giao hàng</h3>
-                        <span style="color: black">Khi mua hơn 500 nghìn đồng</span>
+                        <h3 class="heading">THỰC PHẨM LÀNH MẠNH</h3>
+                        <p>Thực phẩm lành mạnh cải thiện tâm trạng của bạn.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services mb-md-0 mb-4">
-                    <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
-                        <span class="flaticon-box"></span>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span class="flaticon-bicycle"></span>
                     </div>
                     <div class="media-body">
-                        <h3 class="heading">Thực phẩm sạch sẽ</h3>
-                        <span style="color: black">Đóng gỏi cẩn thận, không bao ni lông</span>
+                        <h3 class="heading">MIỄN PHÍ GIAO HÀNG</h3>
+                        <p>Giao hàng tận nơi - thanh toán khi nhận hàng</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services mb-md-0 mb-4">
-                    <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-                        <span class="flaticon-award"></span>
-                    </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-pizza-1"></span></div>
                     <div class="media-body">
-                        <h3 class="heading">Siêu Chất Lượng</h3>
-                        <span style="color: black">Thực phẩm chất lượng đạt chuẩn ISO</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-                <div class="media block-6 services mb-md-0 mb-4">
-                    <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
-                        <span class="flaticon-customer-service"></span>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="heading">Hỗ Trợ</h3>
-                        <span style="color: black"> Hỗ Trợ 24/7</span>
+                        <h3 class="heading">CÔNG THỨC</h3>
+                        <p>Công thức chế biến gà rán truyền thống nổi tiếng thế giới</p>
                     </div>
                 </div>
             </div>
@@ -97,51 +145,56 @@ return false;
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/hamburger.jpg);height: 300px;">
-                <div class="text px-3 py-1 bg-danger" id="category">
-                    <h2 class="mb-0 "><a href="{{ route('food') }}" class="text-white">Thức ăn</a></h2>
+    <div _ngcontent-ng-cli-universal-c64="" class="container item-wrapper mb-3 ng-star-inserted" style="padding: 27px;">
+        <h2 _ngcontent-ng-cli-universal-c64="" class="heading-line mt-4" style="font-size: 30px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.07142857rem;"><span _ngcontent-ng-cli-universal-c64="" style="color: white;">Danh Mục Món Ăn</span></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                    <a href="{{ route('food') }}" class="text-white"><img src="images/bg_food.jpg" alt="" style="width: 450px; height: 300px;"></a>
                 </div>
             </div>
 
-        </div>
+            <div class="col-md-4">
+                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                    <a href="{{ route('drink') }}" class="text-white"><img src="images/bg_drink.jpg" alt="" style="width: 450px; height: 300px;"></a>
+                </div>
+            </div>
 
-        <div class="col-md-4">
-            <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/trasua.jpg);height: 300px;">
-                <div class="text px-3 py-1 bg-danger " id="category">
-                    <h2 class="mb-0 "><a href="{{ route('drink') }}" class="text-white">Thức uống</a></h2>
+            <div class="col-md-4">
+                <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                    <a href="{{ route('sale') }}" class="text-white"><img src="images/KHUYENMAI.jpg" alt="" style="width: 450px; height: 300px;"></a>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/sale.jpg);height: 300px;">
-                <div class="text px-3 py-1 bg-danger" id="category">
-                    <h2 class="mb-0 "><a href="{{ route('sale') }}" class="text-white">Giảm giá</a></h2>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
-
 <section class="ftco-section">
     <div class="container">
-        <div class="row justify-content-center mb-3 pb-3">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <span class="subheading">THỰC PHẨM CHẤT LƯỢNG</span>
-                <h2 class="mb-4">Thực Phẩm Của Chúng Tôi</h2>
-                <p style="color: black">Chế biến ngay bán ngay, không để qua ngày</p>
-                <div class="tab">
-                    <div style="border-radius: 0 24px 0 0; background-color: rgba(255, 255, 250);box-shadow: 3px 1px rgba(0, 0, 0, 0.5); width: auto ; height: 60px">
-                        <img src="images/hot.png" alt="hot" width="50px" style="float: left; background: transparent;">
-                        <p style="color: red;float: left;font-size: 25px; padding-left: 5px; margin-top:15px; float: right">Được Yêu Thích Nhiều</p>
+        <div _ngcontent-ng-cli-universal-c64="" class="container item-wrapper mb-3 ng-star-inserted" style="padding: 27px;">
+            <h2 _ngcontent-ng-cli-universal-c64="" class="heading-line mt-4" style="font-size: 30px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.07142857rem;"><span _ngcontent-ng-cli-universal-c64="" style="color: white;">Có Thể Bạn Sẽ Thích Món Này</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                        <a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="see-more">Mua thêm</a>
                     </div>
-                    <a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="see-more">Mua thêm</a>
                 </div>
-
             </div>
         </div>
     </div>
@@ -149,7 +202,6 @@ return false;
         <div class="row" id="listSP">
             @foreach ($lstsp as $sp)
             <div id="idsp" class="carousel-item active" style="margin-right: 0; width: 25%;">
-
                 <div class="col-md-6 col-lg-3 ftco-animate" style="max-width: 100%;">
                     <div class="product">
                         <a href="{{ route('productdetail',['id'=>$sp->id]) }}" class="img-prod">
@@ -208,19 +260,7 @@ return false;
             @endforeach
         </div>
     </div>
-    <div class="container">
-        <div class="row justify-content-center mb-3 pb-3">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <div class="tab">
-                    <div style="border-radius: 0 24px 0 0; background-color: rgba(255, 255, 250);box-shadow: 3px 1px rgba(0, 0, 0, 0.5); width: auto ; height: 60px">
-                        <img src="images/hot.png" alt="hot" width="50px" style="float: left; background: transparent;">
-                        <p style="color: red;float: left;font-size: 25px; padding-left: 5px; margin-top:15px; float: right">Mua nhiều</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
     <div class="container">
         <div class="row">
             @foreach ($lstsp2 as $sp)
@@ -285,10 +325,21 @@ return false;
         </div>
     </div>
     <div class="container">
-        <div class="row mt-5">
-            <div class="col text-center">
-                <div class="block-27">
-                    <a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="see-more">Mua thêm</a>
+        <div _ngcontent-ng-cli-universal-c64="" class="container item-wrapper mb-3 ng-star-inserted" style="padding: 27px;">
+            <h2 _ngcontent-ng-cli-universal-c64="" class="heading-line mt-4" style="font-size: 30px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.07142857rem;"><span _ngcontent-ng-cli-universal-c64="" style="color: white;">Ưu Đãi Đặc Biệt</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-wrap ftco-animate img mb-4 d-flex align-items-end">
+                        <a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="see-more">Xem thêm</a>
+                    </div>
                 </div>
             </div>
         </div>

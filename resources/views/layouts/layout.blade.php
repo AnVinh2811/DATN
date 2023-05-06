@@ -12,7 +12,7 @@
     $user = DB::table('tai_khoans')->where('id',Session::get('UserId'))->get();
 
     @endphp
-    <title>VinaFood - Yêu là phải nói, đói là phải ăn</title>
+    <title>VinaFood</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -26,21 +26,31 @@
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/magnific-popup.css">
-
     <link rel="stylesheet" href="/css/aos.css">
-
     <link rel="stylesheet" href="/css/ionicons.min.css">
-
     <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="/css/jquery.timepicker.css">
-
-
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/bootstrap/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 @php
 $quantityFoodInCart = DB::table('hoa_dons')
@@ -52,25 +62,21 @@ $quantityFoodInCart = DB::table('hoa_dons')
 <body class="goto-here" id="head">
     <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a href="/"> <img src="/images/logo.jpg" alt="" style="width: 155px;height: 100px;"></a>
+            <a href="/"> <img src="/images/logo.jpg" alt="" style="width: 155px; height: 100px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="nav-link" style="font-size: 15px">Thực đơn</a></li>
-                    <li class="nav-item"><a href="{{ route('sale') }}" class="nav-link" style="font-size: 15px">Ưu Đãi</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link" style="font-size: 15px">Liên Hệ</a></li>
-                    <li class="nav-item"><a href="{{ route('cart') }}" class="nav-link" style="font-size: 15px"><span class="icon-shopping_cart"></span>[{{ $quantityFoodInCart }}]</a></li>
+                    <li class="nav-item"><a href="{{ route('productpage',['key' => "Tất cả",'page' => 1]) }}" class="nav-link" style="font-size: 20px">Thực đơn</a></li>
+                    <li class="nav-item"><a href="{{ route('sale') }}" class="nav-link" style="font-size: 20px">Ưu Đãi</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link" style="font-size: 20px">Liên Hệ</a></li>
+                    <li class="nav-item"><a href="{{ route('cart') }}" class="nav-link" style="font-size: 20px"><span class="icon-shopping_cart"></span>[{{ $quantityFoodInCart }}]</a></li>
                     @if(empty(Session::get('UserId')))
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 15px"><span class="glyphicon glyphicon-user"></span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="{{ route('user.login')}}">Đăng nhập</a>
-                            <a class="dropdown-item" href="{{ route('register') }}">Đăng ký</a>
-                            @else
-                    <li class="nav-item"><a href="" class="nav-link" style="font-size: 15px"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li class="nav-item"><a href="{{ route('user.login')}}" class="nav-link" style="font-size: 20px"><span class="glyphicon glyphicon-user"></span></a></li>
+                    @else
+                    <li class="nav-item"><a href="" class="nav-link" style="font-size: 20px"><span class="glyphicon glyphicon-user"></span></a></li>
                     @endif
                     </li>
                 </ul>
@@ -87,11 +93,11 @@ $quantityFoodInCart = DB::table('hoa_dons')
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">CKCFastFoods</h2>
+                        <h2 class="ftco-heading-2">VinaFood</h2>
                         <p>Liên hệ chúng tôi qua </p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 
-                            <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100010403162844"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
                         </ul>
                     </div>
                 </div>
